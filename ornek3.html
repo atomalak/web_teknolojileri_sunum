@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8" />
+	<script type="text/javascript">
+       
+       function uzerimde(index){
+       	 document.getElementsByTagName("img")[index].style.opacity=0.1;
+
+       }
+
+       function ayrildi(index){
+       	 document.getElementsByTagName("img")[index].style.opacity=1;
+       	 
+       }
+
+	</script>
+</head>
+<body>
+
+<img src="karaman.gif" width="100" height="100" onmouseover="uzerimde(0)" onmouseout="ayrildi(0)" />
+<img src="ege.png" width="100" height="100" onmouseover="uzerimde(1)" onmouseout="ayrildi(1)"/>
+<img src="selcuk.png" width="100" height="100" onmouseover="uzerimde(2)" onmouseout="ayrildi(2)"/>
+
+
+</body>
+</html>

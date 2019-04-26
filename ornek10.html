@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+          
+          $(document).ready(function(){
+               
+               $("#value").keyup(function(){
+                   
+                   $("p").text($(this).val());
+               });
+
+          });
+
+	</script>
+</head>
+<body>
+
+<input type="text" id="value"/>
+<p></p>
+
+</body>
+</html>

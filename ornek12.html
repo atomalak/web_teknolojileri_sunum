@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="karaman">
+<head>
+	<title></title>
+	<meta charset="utf8"/>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+            
+            var app=angular.module("karaman",[]);
+            app.controller("baseCtrl",function($scope){
+                    $scope.takims=[
+			         {"name":"GS","kyil":"1905","samp":"20"},
+			         {"name":"FB","kyil":"1907","samp":"19"},
+			         {"name":"BJK","kyil":"1903","samp":"13"}
+                   ];
+
+            })
+
+             
+
+	</script>
+</head>
+<body ng-controller="baseCtrl">
+<input type="text" ng-model="search"/>
+<table border="1">
+
+ <tr>
+ 	<td>Takim Ismi</td>
+ 	<td>Kuruluş Yılı</td>
+ 	<td>Şampiyonluk sayisi</td>
+
+ </tr>
+ <tr  ng-repeat="takim in takims | filter:search"> 
+   <td>{{takim.name}}</td>
+   <td>{{takim.kyil}}</td>
+   <td>{{takim.samp}}</td>
+
+ </tr>
+	
+
+</table>
+
+</body>
+</html>

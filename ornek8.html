@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8"/>
+	<script type="text/javascript">
+
+        function yaz(){
+        	localStorage.setItem("sehir","Karaman");
+        	alert("Depolama Alanına Yazıldı");
+        }
+
+        function oku(){
+        	var value=localStorage.getItem("sehir");
+        	alert(value);
+        }
+
+        function sil(){
+        	var value=localStorage.removeItem("sehir");
+        	alert("Depolama Alanından silindi");
+        }
+
+
+
+	</script>
+</head>
+<body>
+
+<button onclick="yaz()">Depolama Alanına Yaz</button>
+
+<button onclick="oku()">Depolama Alanından oku</button>
+
+<button onclick="sil()">Depolama Alanına yazılan değeri oku</button>
+
+
+</body>
+</html>
